@@ -1,5 +1,0 @@
-### train
-python3 ./train.py --arch BaseModel --batch_size 16 --gpu '0,1' --train_ps 160 --env 64_MotionMFSR_FAF --embed_dim 64 --warmup
-
-### test
-python test.py --save_images
