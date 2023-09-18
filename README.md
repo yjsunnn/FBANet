@@ -1,7 +1,7 @@
 # Towards Real-World Burst Image Super-Resolution: Benchmark and Method 
-This is the official implementation of ICCV2023 "Towards Real-World Burst Image Super-Resolution: Benchmark and Method". Our codes and datasets will be released very soon! 
+This is the official implementation of ICCV2023 "Towards Real-World Burst Image Super-Resolution: Benchmark and Method".
 
-Here is a temporary [[baidu link]](https://pan.baidu.com/s/1ZOwsAXS-wP980W48g1umow?pwd=lxit) of a coarse version of the RealBSR dataset (train and test) for a quick glance. We are trying our best for a better version!
+Here is the [[baidu link]](https://pan.baidu.com/s/1xVsCXPDK8bLTHZJNr_ygWQ?pwd=1m2e) of the proposed RealBSR dataset. Google link and the project page are comming soon!
 
 ![Details](figs/realbsr_eg.png)
 <hr>
