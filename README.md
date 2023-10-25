@@ -54,3 +54,6 @@ To train BaseModel on RealBSR, we use 2 V100 GPUs and run for 200 epochs:
 python3 ./train.py --arch BaseModel --batch_size 16 --gpu '0,1' --train_ps 160 --env 64_0523_MotionMFSR_FAF --embed_dim 64 --warmup
 ```
 
+## Contact
+My email is yujingsun1999@gmail.com. Please feel free to contact me about anything related to the paper. And I'm also very glad to talk about any topic of Super-Resolution!
+
