@@ -1,9 +1,23 @@
 # Towards Real-World Burst Image Super-Resolution: Benchmark and Method 
 This is the official implementation of ICCV2023 "Towards Real-World Burst Image Super-Resolution: Benchmark and Method".
+![Details](figs/realbsr_eg.png)
 
 Here is the [[baidu link]](https://pan.baidu.com/s/1xVsCXPDK8bLTHZJNr_ygWQ?pwd=1m2e) (include RealBSR-RGB) and the [[google drive link]](https://drive.google.com/drive/folders/1d4FOmRs0cKxWLPCsH-x7apVfsRJMKSJ4?usp=sharing) (include RealBSR-RGB and RealBSR-RAW) of the proposed RealBSR dataset. 
 
-![Details](figs/realbsr_eg.png)
+** Folder Structure of Data in Baidu Link **
+
+'''txt
+RealBSR
+├── train
+├──── LR (original LR. Need to run homography_alignment.py to align them.)
+├──── LR_aligned (Aligned LR using homography. You can use the aligned data directly as inputs of network)
+├──── GT (Corresponding HR)
+├── test
+├──── LR (original LR. Need to run homography_alignment.py to align them.)
+├──── LR_aligned (Aligned LR using homography. You can use the aligned data directly as inputs of network)
+├──── GT (Corresponding HR)
+'''
+
 <hr>
 <i> In short, we propose a new real-world dataset named RealBSR for real-world burst super-resolution, and also propose a corresponding network to fully explore the details provided by sub-pixel information.
 
