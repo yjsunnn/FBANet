@@ -1,13 +1,14 @@
 # Towards Real-World Burst Image Super-Resolution: Benchmark and Method 
 This is the official implementation of ICCV2023 "Towards Real-World Burst Image Super-Resolution: Benchmark and Method".
+
 ![Details](figs/realbsr_eg.png)
 
-Here is the [[baidu link]](https://pan.baidu.com/s/1xVsCXPDK8bLTHZJNr_ygWQ?pwd=1m2e) (include RealBSR-RGB) and the [[google drive link]](https://drive.google.com/drive/folders/1d4FOmRs0cKxWLPCsH-x7apVfsRJMKSJ4?usp=sharing) (include RealBSR-RGB and RealBSR-RAW) of the proposed RealBSR dataset. 
+Here is the [[baidu link]](https://pan.baidu.com/s/1xVsCXPDK8bLTHZJNr_ygWQ?pwd=1m2e) (include RealBSR-RGB) and the [[google drive link]](https://drive.google.com/drive/folders/1d4FOmRs0cKxWLPCsH-x7apVfsRJMKSJ4?usp=sharing) (include RealBSR-RGB and RealBSR-RAW) of the proposed RealBSR dataset. **(Please read the folder structure below before using them)**
 
-** Folder Structure of Data in Baidu Link **
+## Folder Structure of Data in Baidu Link
 
-'''txt
-RealBSR
+```txt
+RealBSR Dataset
 ├── train
 ├──── LR (original LR. Need to run homography_alignment.py to align them.)
 ├──── LR_aligned (Aligned LR using homography. You can use the aligned data directly as inputs of network)
@@ -16,12 +17,24 @@ RealBSR
 ├──── LR (original LR. Need to run homography_alignment.py to align them.)
 ├──── LR_aligned (Aligned LR using homography. You can use the aligned data directly as inputs of network)
 ├──── GT (Corresponding HR)
-'''
+```
 
-<hr>
-<i> In short, we propose a new real-world dataset named RealBSR for real-world burst super-resolution, and also propose a corresponding network to fully explore the details provided by sub-pixel information.
+## Folder Structure Of Data in Google Drive Link
+```txt
+RealBSR Dataset
+├── RGB
+├──── train
+├────── LR_aligned.zip (Aligned LR using homography. You can use the aligned data directly as inputs)
+├────── trainpatch.zip (Each group contains 14 original LR + 1 HR named xxxrewarp.png. If you want to use the LR data here, you need to run homography_alignment.py before regarding them as inputs of our network)
+├──── test
+├────── LR_aligned.zip (Aligned LR using homography. You can use the aligned data directly as inputs)
+├────── testpatch.zip (Each group contains 14 original LR + 1 HR named xxxrewarp.png. If you want to use the LR data here, you need to run homography_alignment.py before regarding them as inputs of our network)
 
-![Overview](figs/Framework.png)
+├── RAW
+├──── trainpatch.zip (Each group contains 14 original LR RAW + 1 HR named xxx_rgb.png + 1 pkl named xxx.pkl. The raw LR need to be aligned first by simply changing the homography_alignment for 4 channels. )
+├──── testpatch.zip (Each group contains 14 original LR RAW + 1 HR named xxx_rgb.png + 1 pkl named xxx.pkl. The raw LR need to be aligned first by simply changing the homography_alignment for 4 channels. )
+
+```
 
 ## Package dependencies
 The project is built with PyTorch 1.10.1, Python3.9, CUDA10.1. For package dependencies, you can install them by:
