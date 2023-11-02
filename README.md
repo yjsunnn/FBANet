@@ -44,7 +44,7 @@ pip3 install -r requirements.txt
 
 ## Pretrained model
 
-- Checkpoint of FBANet on RealBSR dataset [[Google Drive]](https://drive.google.com/file/d/1Gc-xp_MAi6_rLTfEAT9N50ERgbfz3b4A/view?usp=drive_link).
+- Checkpoint of FBANet on RealBSR dataset [[Google Drive]](https://drive.google.com/file/d/1Gc-xp_MAi6_rLTfEAT9N50ERgbfz3b4A/view?usp=drive_link) and [[Baidu Drive Link]](https://pan.baidu.com/s/1y0OSXD9ExMj4mQ8Sj0VpoA?pwd=f9ew)
 
 |               Model                |  PSNR  | SSIM  | LPIPS |
 |:----------------------------------:|:------:|:-----:|:-----:|
