@@ -3,9 +3,9 @@ This is the official implementation of ICCV2023 "Towards Real-World Burst Image 
 
 ![Details](figs/realbsr_eg.png)
 
-Here is the [[baidu link]](https://pan.baidu.com/s/1xVsCXPDK8bLTHZJNr_ygWQ?pwd=1m2e) (include RealBSR-RGB) and the [[google drive link]](https://drive.google.com/drive/folders/1d4FOmRs0cKxWLPCsH-x7apVfsRJMKSJ4?usp=sharing) (include RealBSR-RGB and RealBSR-RAW) of the proposed RealBSR dataset. **(Please read the folder structure below before using them)**
+Here is the [[baidu link]](https://pan.baidu.com/s/1xVsCXPDK8bLTHZJNr_ygWQ?pwd=1m2e) (include Cropped RealBSR-RGB), the [[baidu link]](https://pan.baidu.com/s/1ak1pWL8vnym6txisxksgdg?pwd=mr3m) (include Full-size RealBSR-RGB) and the [[google drive link]](https://drive.google.com/drive/folders/1d4FOmRs0cKxWLPCsH-x7apVfsRJMKSJ4?usp=sharing) (include Cropped RealBSR-RGB and Cropped RealBSR-RAW) of the proposed RealBSR dataset. **(Please read the folder structure below before using them)**
 
-## Folder Structure of Data in Baidu Link
+## Folder Structure of Data in Baidu Link of Cropped RealBSR-RGB
 
 ```txt
 RealBSR Dataset
@@ -19,7 +19,19 @@ RealBSR Dataset
 ├──── GT (Corresponding HR)
 ```
 
-## Folder Structure Of Data in Google Drive Link
+## Folder Structure of Data in Baidu Link of Full-Size RealBSR-RGB
+
+```txt
+RealBSR Dataset
+├── train
+├──── LR (original LR. Need to run homography_alignment.py to align them.)
+├──── rewarp.png (GT)
+├── test
+├──── LR (original LR. Need to run homography_alignment.py to align them.)
+├──── rewarp.png (GT)
+```
+
+## Folder Structure Of Data in Google Drive Link of Cropped RGB and RAW
 ```txt
 RealBSR Dataset
 ├── RGB
